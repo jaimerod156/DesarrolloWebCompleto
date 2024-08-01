@@ -20,46 +20,7 @@ html {
 body{
     font-size: 16px;/*1 rem = 10px*/
     font-family: "Krub", sans-serif;
-    background: linear-gradient(to top, #dfe9f3 0%, var(--blanco) 100%   );
-}
-
-
-.contenedor{
-    max-width: 120rem;
-    margin: 0 auto;
-}
-
-.boton{
-    display: block;
-    background: var(--secundario);
-    color: var(--blanco);
-    padding: 10px 30px;
-    margin-top: 3rem;
-    font-size: 2rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    text-align: center;
-    border-radius: .5rem;
-    border: none;
-    width: 90%;
-
-}
-@media (min-width: 768px) {
-    .boton{
-        width: auto;
-    }
-}
-.boton:hover{
-    cursor: pointer;
-}
-.sombra{
-    -webkit-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.54);
-    -moz-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.54);
-    box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.54);
-    background: var(--blanco);
-    padding: 2rem;
-    border-radius: 1rem;
-
+    background: linear-gradient(to top, #dfe9f3 0%, var(--blanco) 100%);
 }
 h1{ 
     font-size: 3.8rem;
@@ -77,22 +38,6 @@ h1,h2,h3{
 /* Titulos */
 .titulo span{
     font-size: 2rem;
-}
-
-/* Utilidades */
-.w-sm-100{
-    width: 100%;
-}
-@media (min-width: 768px) {
-    .w-sm-100{
-        width: auto;
-    }
-}
-.flex{
-    display: flex;
-}
-.alinear-derecha{
-    justify-content: flex-end;
 }
 /* Navegacion Principal*/
 .nav-bg{
@@ -174,8 +119,62 @@ h1,h2,h3{
     align-items: flex-end;
 }
 
-.servicios, 
+/* Utilidades */
+.boton{
+    display: block;
+    background: var(--secundario);
+    color: var(--blanco);
+    padding: 10px 30px;
+    margin-top: 3rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: .5rem;
+    border: none;
+    width: 90%;
+
+}
+@media (min-width: 768px) {
+    .boton{
+        width: auto;
+    }
+}
+.boton:hover{
+    cursor: pointer;
+}
+
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.sombra{
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.54);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.54);
+    box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.54);
+    background: var(--blanco);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.w-sm-100{
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .w-sm-100{
+        width: auto;
+    }
+}
+.flex{
+    display: flex;
+}
+.alinear-derecha{
+    justify-content: flex-end;
+}
+
+
 .navegacion-principal,
+.servicios, 
 .formulario{
     scroll-snap-align: center;
     scroll-snap-stop: always;
