@@ -1,32 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Frontend Store</title>
-    <link rel="preload" href="./css/normalize.css" as="style">
-    <link rel="stylesheet" href="./css/normalize.css"> 
-    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
-    <link rel="preload" href="./css/styles.css" as="style">
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
+    <link rel="preload" href="./css/normalize.css" as="style" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" href="./css/styles.css" as="style" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
     <header class="header">
-        <a href="index.html">
-            <img class="header__logo" src="./img/logo.png" alt="logotipo">
-        </a>
+      <a href="index.html">
+        <img class="header__logo" src="./img/logo.png" alt="logotipo" />
+      </a>
     </header>
     <nav class="nav">
-        <a class="nav__link " href="index.html">Tienda</a>
-        <a class="nav__link nav__link--activo" href="nosotros.html">Nosotros</a>
+      <a class="nav__link" href="index.html">Tienda</a>
+      <a class="nav__link nav__link--activo" href="nosotros.html">Nosotros</a>
     </nav>
 
     <main class="contenedor">
-        <h1>Nosotros</h1>
+      <h1>SOBRE NOSOTROS</h1>
+      <div class="nosotros">
+        <div class="nosotros__texto">
+          <p>
+            Cras consequat porttitor urna, egestas ultrices nunc gravida non.
+            Proin fringilla lorem sit amet ex pellentesque tristique. In gravida
+            velit feugiat, elementum mauris vitae, sollicitudin elit. Vivamus
+            venenatis cursus eros, et maximus lacus luctus a. Curabitur
+            fermentum consequat dictum. Duis consectetur ut justo vitae
+            faucibus. 
+
+            Duis tincidunt accumsan nisl id fermentum. Ut
+            vehicula pharetra dolor eget tincidunt. Nulla arcu libero, tincidunt
+            sit amet egestas non, volutpat at justo. Vestibulum rhoncus feugiat
+            sapien nec imperdiet. Orci varius natoque penatibus et magnis dis
+            parturient montes, nascetur ridiculus mus.
+          </p>
+        </div>
+        <div class="nosotros__img">
+          <img src="./img/nosotros.jpg" alt="imagen nosotros" />
+        </div>
+      </div>
     </main>
+    <section class="contenedor comprar">
+        <h2 class="comprar__titulo">Porqué Comprar con Nosotros</h2>
+        <div class="bloques">
+            <div class="bloque">
+                <img class="bloque__imagen" src="./img/icono_1.png" alt="porque comprar">
+                <h3 class="bloque__titulo">El mejor precio</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="bloque">
+                <img class="bloque__imagen" src="./img/icono_2.png" alt="Devs">
+                <h3 class="bloque__titulo">Para Devs</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="bloque">
+                <img class="bloque__imagen" src="./img/icono_3.png" alt="envios">
+                <h3 class="bloque__titulo">Envio gratis</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="bloque">
+                <img class="bloque__imagen" src="./img/icono_4.png" alt="calidad">
+                <h3 class="bloque__titulo">La mejor calidad</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+
+        </div>
+    </section>
 
     <footer class="footer">
-        <p class="footer__texto">Front-end store-Todos los derechos reservados 2024</p>
+      <p class="footer__texto">
+        Front-end store-Todos los derechos reservados 2024
+      </p>
     </footer>
-</body>
+  </body>
 </html>
