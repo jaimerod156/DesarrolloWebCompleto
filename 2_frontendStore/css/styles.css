@@ -2,7 +2,7 @@
     --primario: #9c27b0;
     --primarioOscuro: #891190;
     --secundario:#ffce00;
-    --secundarioOscuro: #dfb612;
+    --secundarioOscuro: rgba(233, 191, 3, 0.918);
     --blanco:#fff;
     --negro: #000;
 
@@ -60,7 +60,7 @@ h3{
     justify-content: center;
 }
 .header__logo{
-    margin:3rem 0;
+    margin: 3rem 0;
 
 }
 /* Navegacion */
@@ -125,6 +125,7 @@ h3{
 } */
 .producto__nombre{
     font-size: 3rem;
+    text-transform: uppercase;
 }
 .producto__precio{
     font-size: 1.8rem;
@@ -166,11 +167,13 @@ h3{
 .nosotros{
     display: grid;
     grid-template-rows: repeat(2,auto);
+    padding: 0;
+    
     
 }
 .nosotros__texto{
     margin: 0 auto;
-    text-align: justify;
+    text-align:justify;
 }
 .nosotros__img{
     grid-row: 1/2;
@@ -181,6 +184,7 @@ h3{
     .nosotros{
         grid-template-columns: repeat(2,1fr);
         column-gap: 2rem;
+        
         
     }
     .nosotros__img{
@@ -233,7 +237,7 @@ h3{
     color: var(--blanco);
     width: 100%;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.4rem;
     font-family: Arial, Helvetica, sans-serif;
     appearance: none;
 }
@@ -255,4 +259,9 @@ h3{
 }
 .formulario__submit:hover{
     background-color: var(--secundarioOscuro);
+}
+@media (min-width: 768px) {
+    .formulario__campo{
+        font-size: 2rem;
+    }   
 }
