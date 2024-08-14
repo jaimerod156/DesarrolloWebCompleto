@@ -4,6 +4,7 @@
     --fuenteParrafos: "Open Sans", sans-serif;
 
     --primario: #78403c;
+    --gris: #e1e1e1;
     --blanco: #fff;
     --negro: #000;
 }
@@ -26,8 +27,7 @@ body{
 }
 /* Globales */
 .contenedor{
-    max-width: 100rem;
-    width: 90%;
+    width: min(90%, 110rem);
     margin: 0 auto;
 }
 
@@ -36,6 +36,7 @@ a{
 }
 h1,h2,h3,h4{
     font-family: var(--fuenteHeading);
+    line-height: 1.2;
 }
 h1{
     font-size: 4.8rem;
@@ -44,10 +45,11 @@ h2{
     font-size: 4rem;
 }
 h3{
-    font-size: 3.2rem;
+    font-size: 2.8rem;
+    
 }
 h4{
-    font-size: 2.8rem;
+    font-size: 2.5rem;
 }
 img {
     max-width: 100%;
@@ -71,7 +73,7 @@ img {
     background-position: center center;/*la imagen se centrea en x e y*/
     width: 100%;
     height: 50rem;
-    position: absolute;
+    /* position: absolute; */
 }
 .header__texto{
     text-align: center;
@@ -84,19 +86,14 @@ img {
     }
 }
 .barra{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
+    padding-top: 4rem;
 }
 
 @media (min-width: 768px) {
     .barra{
-        flex-direction: row;
+        display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 100%;
     }
 }
 .logo{
@@ -109,9 +106,10 @@ img {
 .logo__bold{
     font-weight: 700;
 }
-.navegacion{
 
-}
+/* .navegacion{
+
+} */
 
 @media (min-width: 768px) {
     .navegacion{
@@ -126,3 +124,84 @@ img {
     font-size: 1.8rem;
     color: var(--blanco);
 }
+
+@media (min-width: 768px) {
+    .contenido-principal{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+    }
+    
+}
+
+.entrada{
+    border-bottom: 1px solid var(--gris);
+    margin-bottom: 2rem;
+
+
+}
+.entrada:last-of-type{
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.boton{
+    display: block;
+    font-family: var(--fuenteHeading);
+    color: var(--blanco);
+    text-align: center;
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+
+}
+@media (min-width:768px ) {
+    .boton{
+        display:inline-block;
+    }
+}
+
+.boton--primario{
+    background: var(--negro);
+}
+
+.boton--secundario{
+    background: var(--primario);
+}
+
+.cursos{
+    list-style: none;
+}
+
+.widget-curso{
+    border-bottom: 1px solid var(--gris);
+    margin-bottom: 2rem;
+}
+.widget-curso:last-of-type{
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.widget-curso__label{
+    font-family: var(--fuenteHeading);
+    font-weight: 700;
+}
+.widget-curso__info{
+    font-family: var(--fuenteHeading);
+    font-weight: 400;
+}
+
+.widget-curso__label,
+.widget-curso__info{
+    font-size: 2rem;
+}
+
+.footer{
+    width: 100%;
+    background: var(--negro);
+    padding-bottom: 3rem;
+    margin-top: 4rem;
+}
+
+
