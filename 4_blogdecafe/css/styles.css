@@ -66,8 +66,14 @@ img {
 }
 
 /* Header */
-.header{
+.webp .header{
+    background-image: url('../img/banner.webp');
+
+}
+.no-webp .header{
     background-image: url('../img/banner.jpg');
+}
+.header{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;/*la imagen se centrea en x e y*/
@@ -154,12 +160,17 @@ img {
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 2rem;
+    border: none;
 
 }
 @media (min-width:768px ) {
     .boton{
         display:inline-block;
     }
+}
+
+.boton:hover{
+    cursor: pointer;
 }
 
 .boton--primario{
@@ -204,4 +215,88 @@ img {
     margin-top: 4rem;
 }
 
+/* pagina NOSOTROS.HTL*/
 
+@media (min-width: 768px) {
+    /* .sobre-nosotros{
+        display: flex;
+        justify-content: space-between;
+        /* gap: 2rem;
+        } */
+    
+    /*
+    .sobre-nosotros__imagen,
+    .sobre-nosotros__texto{
+        flex-basis: calc(50% - 1rem);
+        }
+        */
+        .sobre-nosotros{
+         display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 2rem;
+     }
+}
+
+/* CURSOS*/
+
+.curso{
+    padding: 3rem 0;
+    border-bottom: 2px solid var(--gris);
+}
+.curso:last-of-type{
+    border-bottom: none;
+}
+@media (min-width: 768px) {
+    .curso{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+    }    
+}
+
+.curso__label{
+    font-family: var(--fuenteHeading);
+    font-weight: 700;
+}
+.curso__info{
+    font-family: var(--fuenteHeading);
+    font-weight: 400;
+}
+
+.curso__label,
+.curso__info{
+    font-size: 2rem;
+}
+
+/* CONTACTO */
+.contacto-bg{
+    background-image: url('../img/contacto.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40rem;
+    
+}
+
+/*fomulario*/
+.formulario{
+    background-color: var(--blanco);
+    margin: -5rem auto 0 auto;
+    width: 95%;
+    padding: 5rem;
+}
+.campo{
+    display: flex;
+    margin-bottom: 2rem;
+}
+.campo__label{
+    flex: 0 0 9rem;
+    text-align: right;
+    padding-right: 2rem;
+}
+.campo__field{
+    flex: 1;
+    border: 1px solid var(--gris);
+}
+.campo__field--textarea{
+    height: 20rem;
+}
