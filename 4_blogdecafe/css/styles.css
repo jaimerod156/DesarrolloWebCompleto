@@ -68,12 +68,13 @@ img {
 /* Header */
 .webp .header{
     background-image: url('../img/banner.webp');
-
+    
 }
 .no-webp .header{
     background-image: url('../img/banner.jpg');
 }
 .header{
+    background-image: url('../img/banner.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;/*la imagen se centrea en x e y*/
@@ -113,9 +114,6 @@ img {
     font-weight: 700;
 }
 
-/* .navegacion{
-
-} */
 
 @media (min-width: 768px) {
     .navegacion{
@@ -230,10 +228,10 @@ img {
         flex-basis: calc(50% - 1rem);
         }
         */
-        .sobre-nosotros{
+    .sobre-nosotros{
          display: grid;
-        grid-template-columns: repeat(2,1fr);
-        column-gap: 2rem;
+         grid-template-columns: repeat(2,1fr);
+         column-gap: 2rem;
      }
 }
 

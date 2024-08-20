@@ -1,14 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog de Café</title>
+    <title>BlogCafé</title>
+    <meta name="description" content="Pagina web de blog de cafe">
+
+    <!-- prefetch -->
+     <link rel="prefetch" href="nosotros.html" as="document">
+
+    <!-- preload -->
     <link rel="preload" href="./css/normalize.css" as="style">
     <link rel="stylesheet" href="./css/normalize.css"> 
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&family=Staatliches&display=swap" as="font" crossorigin="crossorigin">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&family=Staatliches&display=swap" rel="stylesheet">
+
     <link rel="preload" href="./css/styles.css" as="style">
     <link rel="stylesheet" href="./css/styles.css"> 
+
+    <!-- <link rel="preload" href="./img/blog1.jpg" as="image"> -->
 </head>
 <body>
     <header class="header">
@@ -31,6 +42,7 @@
     </header>
     <main class="contenedor">
         <h3 class="centrar-texto">Contacto</h3>
+        
         <div class="contacto-bg"></div>
         <div class="formulario">
             <div class="campo">
