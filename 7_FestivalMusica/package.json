@@ -4,7 +4,8 @@
   "description": "Aprendiendo SASS y NPM",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass":"sass --watch src/scss:build/css"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/jaimerod156/DesarrolloWebCompleto/issues"
   },
-  "homepage": "https://github.com/jaimerod156/DesarrolloWebCompleto#readme"
+  "homepage": "https://github.com/jaimerod156/DesarrolloWebCompleto#readme",
+  "devDependencies": {
+    "sass": "^1.78.0"
+  }
 }
