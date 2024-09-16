@@ -322,7 +322,6 @@ body {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  color: #ffffff;
 }
 
 p {
@@ -368,4 +367,31 @@ img {
 
 body > section {
   padding: 10rem 0;
+}
+
+/*importamos las variables*/
+.header {
+  background-color: #4C8883;
+}
+.header .contenido-header {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header h1 {
+  color: #ffffff;
+  margin: 0;
+}
+
+.navegacion-principal {
+  display: flex;
+  gap: 2rem;
+}
+.navegacion-principal a {
+  color: #ffffff;
+  font-size: 2.4rem;
+}
+.navegacion-principal a:hover {
+  color: #fdda00;
 }
