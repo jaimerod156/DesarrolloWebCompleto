@@ -29,8 +29,14 @@
     margin: 0 auto;
 }
 
-@mixin grid($columna, $gap){
+@mixin grid($columnas, $gap){
     display: grid;
     grid-template-columns: repeat($columnas, 1fr);
     gap: $gap;
+}
+
+@mixin resetear-lista{
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
