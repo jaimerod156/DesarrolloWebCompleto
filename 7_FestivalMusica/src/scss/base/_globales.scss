@@ -23,7 +23,7 @@ p{
 }
 .contenedor {
     width: 95%;
-    max-width: 1200px;
+    max-width: 120rem;
     margin: 0 auto;
 }
 h1,h2,h3{
@@ -51,6 +51,7 @@ img {
     height: auto;
     display: block;
 }
+/*primer nivel de hijos*/
 body > section {
     padding: 10rem 0;
 }
