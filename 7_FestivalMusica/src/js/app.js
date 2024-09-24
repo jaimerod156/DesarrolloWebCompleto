@@ -2,6 +2,7 @@
 document.addEventListener('DOMContentLoaded',()=>{
     navegacionFija();
     crearGalerias();
+    resaltarEnlace();
 })
 
 function navegacionFija(){
@@ -75,4 +76,34 @@ function cerrarModal(){
     }, 500);
     
 }
+
+function resaltarEnlace(){
+    document.addEventListener('scroll',()=>{
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.navegacion-principal a');
+        
+        let actual = '';
+        sections.forEach(section =>{
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            
+            if(window.scrollY >= (sectionTop - sectionHeight / 3 ) ){
+                actual = section.id;
+                
+            }
+        });
+
+        navLinks.forEach(link =>{
+            if(link.getAttribute('href') === '#'+ actual){
+                link.classList.add('active');
+            }else{
+                link.classList.remove('active')
+            }
+
+        })
+
+    })
+}
+
+
 
