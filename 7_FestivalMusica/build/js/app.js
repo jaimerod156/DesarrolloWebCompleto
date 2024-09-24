@@ -1,10 +1,21 @@
 
-
-
-
 document.addEventListener('DOMContentLoaded',()=>{
+    navegacionFija();
     crearGalerias();
 })
+
+function navegacionFija(){
+    const header = document.querySelector('.header');
+    const sobreFestival = document.querySelector('.sobre-festival');
+    document.addEventListener('scroll', ()=>{
+        if(sobreFestival.getBoundingClientRect().bottom < 1){
+            header.classList.add('fixed');
+        }else{
+            header.classList.remove('fixed');            
+        }
+        
+    })
+}
 
 function crearGalerias(){
     const CANTIDAD_IMAGENES = 16;
