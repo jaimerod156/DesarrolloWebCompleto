@@ -25,12 +25,13 @@ function crearGalerias(){
     
     
     for(let i=1; i<=CANTIDAD_IMAGENES;i++){
-        const img = document.createElement('IMG');
-        img.loading = 'lazy'
-        img.width = "300"
-        img.height = "200"
-        img.src =`./src/img/gallery/thumb/${i}.jpg`;
-        img.alt = "imagen galeria"
+        const img = document.createElement('PICTURE');
+        img.innerHTML = `
+    <source srcset="build/img/gallery/thumb/${i}.avif" type="image/avif">
+    <source srcset="build/img/gallery/thumb/${i}.webp" type="image/webp">
+    <img loading="lazy" width="200" height="300" src="build/img/gallery/thumb/${i}.jpg" alt="imagen galeria">
+`;
+
 
         
          // Event handler
@@ -44,9 +45,12 @@ function crearGalerias(){
 
 function mostrarImagen(i){
 
-    const img = document.createElement('IMG');
-    img.src =`./src/img/gallery/full/${i}.jpg`;
-    img.alt = "imagen galeria"
+    const img = document.createElement('PICTURE');
+    img.innerHTML = `
+    <source srcset="build/img/gallery/full/${i}.avif" type="image/avif">
+    <source srcset="build/img/gallery/full/${i}.webp" type="image/webp">
+    <img loading="lazy" width="200" height="300" src="build/img/gallery/full/${i}.jpg" alt="imagen galeria">
+`;
     
     //Generar modal
     const modal = document.createElement('DIV');
