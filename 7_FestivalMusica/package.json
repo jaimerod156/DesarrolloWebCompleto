@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/jaimerod156/DesarrolloWebCompleto#readme",
   "devDependencies": {
+    "glob": "^11.0.0",
     "gulp-terser": "^2.1.0",
     "sass": "^1.78.0",
     "sharp": "^0.33.5"
