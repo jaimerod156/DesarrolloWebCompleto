@@ -3,35 +3,21 @@
   "version": "1.0.0",
   "description": "Aprendiendo SASS y NPM",
   "type": "module",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass --watch src/scss:build/css",
     "dev": "gulp"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jaimerod156/DesarrolloWebCompleto.git"
   },
   "keywords": [
     "SASS",
     "NPM",
     "Gulp"
   ],
-  "author": "Jaime Rodriguez",
+  "author": "Juan De la torre @codigoconjuan",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jaimerod156/DesarrolloWebCompleto/issues"
-  },
-  "homepage": "https://github.com/jaimerod156/DesarrolloWebCompleto#readme",
   "devDependencies": {
-    "glob": "^11.0.0",
-    "gulp-terser": "^2.1.0",
-    "sass": "^1.78.0",
-    "sharp": "^0.33.5"
-  },
-  "dependencies": {
     "gulp": "^5.0.0",
-    "gulp-sass": "^5.1.0"
+    "gulp-sass": "^5.1.0",
+    "gulp-terser": "^2.1.0",
+    "sass": "^1.75.0"
   }
 }
