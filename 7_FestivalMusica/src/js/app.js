@@ -26,14 +26,19 @@ function crearGalerias(){
     
     for(let i=1; i<=CANTIDAD_IMAGENES;i++){
         const img = document.createElement('IMG');
-         img.src =`./src/img/gallery/full/${i}.jpg`;
-         img.alt = "imagen galeria"
-         galeriaUl.appendChild(img);
+        img.loading = 'lazy'
+        img.width = "300"
+        img.height = "200"
+        img.src =`./src/img/gallery/full/${i}.jpg`;
+        img.alt = "imagen galeria"
 
+        
+         // Event handler
          img.onclick = function(){
              mostrarImagen(i);
         }
-        
+            
+        galeriaUl.appendChild(img);
     }
 }
 
